@@ -27,6 +27,15 @@ const handleUserInput = key => {
   if (key === '\u0064'){ // d
     connection.write("Move: right")
   }
+  if (key == 1) { // Speech 1
+    connection.write("Say: Your shoe is untied!")
+  }
+  if (key == 2){ // Speech 2
+    connection.write("Say: GG")
+  }
+  if (key == 3){ // Speech 3
+    connection.write("Say: Noooooooooooooo")
+  }
 };
 
 module.exports = {setupInput};
